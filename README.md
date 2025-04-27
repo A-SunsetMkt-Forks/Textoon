@@ -5,3 +5,5 @@
 
 ###  Textoon: Generating Vivid 2D Cartoon Characters from Text Descriptions
 Institute for Intelligent Computing, Alibaba Group
+
+### Codes coming soon.
