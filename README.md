@@ -64,7 +64,7 @@ pip install -r requirements.txt
 ```
 
 2. Configure the translation service. If you can access Google, set ‘translation_services’ to ‘google’. Otherwise, it is recommended to use [Alibaba Cloud Translation Service](https://www.aliyun.com/product/ai/base_alimt). Activate the service to obtain AK&SK and fill in the environment variables Translate_AK&Translate_SK;
-3. Download text parsing model(Based on Qwen2.5) and place it in the model folder;
+3. Download [TextoonPromptParsing](https://modelscope.cn/models/hechaohc/TextoonPromptParsing)(Based on Qwen2.5-1.5B-Instruct) and place it in the model folder "checkpoints";
 4. Run the main.py;
 ```
 python main.py --text_prompt "她将长发扎成两条俏皮的双马尾，中发修剪得干净利落，长刘海微微遮住额头，露出一双灵动的蓝色眼睛。她穿着一件圆领的浅紫色短袖上衣，袖口处有荷叶边设计，下身搭配一条高腰的白色短裤，脚上穿着一双白色运动鞋"
