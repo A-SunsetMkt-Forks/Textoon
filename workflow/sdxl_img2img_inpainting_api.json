@@ -1,0 +1,226 @@
+{
+  "1": {
+    "inputs": {
+      "name": "xinsir_controlnet_union_sdxl_promax.safetensors",
+      "control_type": "canny/lineart/mlsd"
+    },
+    "class_type": "ACN_ControlNet++LoaderSingle"
+  },
+  "2": {
+    "inputs": {
+      "ckpt_name": "sdxl-动漫二次元_2.0.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple"
+  },
+  "4": {
+    "inputs": {
+      "text": "(worst quality, low quality),deformed,distorted,disfigured,doll,poorly drawn,bad anatomy,wrong anatomy,",
+      "speak_and_recognation": true,
+      "clip": [
+        "2",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "5": {
+    "inputs": {
+      "text": [
+        "21",
+        0
+      ],
+      "speak_and_recognation": true,
+      "clip": [
+        "2",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "6": {
+    "inputs": {
+      "image": ""
+    },
+    "class_type": "ETN_LoadImageBase64"
+  },
+  "7": {
+    "inputs": {
+      "image": ""
+    },
+    "class_type": "ETN_LoadImageBase64"
+  },
+  "8": {
+    "inputs": {
+      "image": ""
+    },
+    "class_type": "ETN_LoadImageBase64"
+  },
+  "10": {
+    "inputs": {
+      "red": 255,
+      "green": 255,
+      "blue": 255,
+      "threshold": 1,
+      "image": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "MaskFromColor+"
+  },
+  "11": {
+    "inputs": {
+      "image": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "GetImageSize+"
+  },
+  "12": {
+    "inputs": {
+      "pixels": [
+        "7",
+        0
+      ],
+      "vae": [
+        "2",
+        2
+      ]
+    },
+    "class_type": "VAEEncode"
+  },
+  "13": {
+    "inputs": {
+      "samples": [
+        "12",
+        0
+      ],
+      "mask": [
+        "10",
+        0
+      ]
+    },
+    "class_type": "SetLatentNoiseMask"
+  },
+  "15": {
+    "inputs": {
+      "preprocessor": "lineart",
+      "sd_version": "sdxl",
+      "resolution": [
+        "11",
+        0
+      ],
+      "preprocessor_override": "None",
+      "image": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "AV_ControlNetPreprocessor"
+  },
+  "16": {
+    "inputs": {
+      "strength": 1,
+      "start_percent": 0,
+      "end_percent": 1,
+      "positive": [
+        "5",
+        0
+      ],
+      "negative": [
+        "4",
+        0
+      ],
+      "control_net": [
+        "1",
+        0
+      ],
+      "image": [
+        "15",
+        0
+      ]
+    },
+    "class_type": "ACN_AdvancedControlNetApply"
+  },
+  "17": {
+    "inputs": {
+      "seed": 945444797025418,
+      "steps": 20,
+      "cfg": 7,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "karras",
+      "denoise": 0.5,
+      "model": [
+        "2",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "16",
+        1
+      ],
+      "latent_image": [
+        "13",
+        0
+      ]
+    },
+    "class_type": "KSampler"
+  },
+  "18": {
+    "inputs": {
+      "samples": [
+        "17",
+        0
+      ],
+      "vae": [
+        "2",
+        2
+      ]
+    },
+    "class_type": "VAEDecode"
+  },
+  "19": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "18",
+        0
+      ]
+    },
+    "class_type": "SaveImage"
+  },
+  "20": {
+    "inputs": {
+      "model": "unsloth/Meta-Llama-3.1-8B-bnb-4bit"
+    },
+    "class_type": "Joy_caption_load"
+  },
+  "21": {
+    "inputs": {
+      "prompt": "A descriptive caption for this image",
+      "max_new_tokens": 512,
+      "temperature": 0.5,
+      "cache": false,
+      "speak_and_recognation": true,
+      "joy_pipeline": [
+        "20",
+        0
+      ],
+      "image": [
+        "22",
+        0
+      ]
+    },
+    "class_type": "Joy_caption"
+  },
+  "22": {
+    "inputs": {
+      "image": ""
+    },
+    "class_type": "ETN_LoadImageBase64"
+  }
+}

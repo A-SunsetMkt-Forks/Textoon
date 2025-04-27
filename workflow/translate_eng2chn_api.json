@@ -1,0 +1,27 @@
+{
+  "1": {
+    "inputs": {
+      "from_translate": "auto",
+      "to_translate": "chinese (simplified)",
+      "add_proxies": false,
+      "proxies": "",
+      "auth_data": "",
+      "service": "GoogleTranslator",
+      "text": "1boy, solo, she tied her long hair into two playful ponytails, her middle hair was trimmed neatly, and her long bangs slightly covered her forehead, revealing a pair of smart blue eyes. She was wearing a light purple short-sleeved top with round neck, with ruffles at the cuffs, a pair of high-waisted white shorts on her lower body, and a pair of white sneakers on her feet. The overall look was full of youthfulness.",
+      "Show proxy": "proxy_hide",
+      "Show authorization": "authorization_hide",
+      "speak_and_recognation": true
+    },
+    "class_type": "DeepTranslatorTextNode"
+  },
+  "2": {
+    "inputs": {
+      "text": [
+        "1",
+        0
+      ],
+      "show_text": "1boy，Solo，她将长发绑成两只嬉戏的马尾辫，中间的头发整齐地修剪了，长长的刘海略微遮住了额头，露出了一双聪明的蓝色眼睛。她穿着浅紫色的短袖顶，上面有圆脖子，袖口上有荷叶边，她的下半身上的一双高腰白色短裤，脚上的一双白色运动鞋。总体外观充满了年轻。"
+    },
+    "class_type": "ShowTextForGPT"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "1": {
+    "inputs": {
+      "from_translate": "chinese (simplified)",
+      "to_translate": "english",
+      "add_proxies": false,
+      "proxies": "",
+      "auth_data": "",
+      "service": "GoogleTranslator",
+      "text": "1girl, 独奏, 一个可爱的小女孩，黑色马尾，穿着蓝色校园jk短袖制服，搭配牛仔短裤，脚上是一双红色的运动鞋，过渡自然，影视动漫，4K，超高清",
+      "Show proxy": "proxy_hide",
+      "Show authorization": "authorization_hide",
+      "speak_and_recognation": true
+    },
+    "class_type": "DeepTranslatorTextNode"
+  },
+  "2": {
+    "inputs": {
+      "text": [
+        "1",
+        0
+      ],
+      "show_text": "1girl, solo, a cute little girl, black ponytail, wearing a blue campus JK short-sleeved uniform, paired with denim shorts, and a pair of red sneakers on her feet, with a natural transition, film and television animation, 4K, ultra high definition"
+    },
+    "class_type": "ShowTextForGPT"
+  }
+}

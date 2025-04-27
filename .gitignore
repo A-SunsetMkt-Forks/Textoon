@@ -1,0 +1,5 @@
+**/__pycache__/
+**/.DS_Store
+checkpoints/
+outputs/
+assets/haimeng/part_new/*_mask.png
