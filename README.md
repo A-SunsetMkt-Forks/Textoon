@@ -13,9 +13,7 @@
   <img src="./assets/images/textoon_teaser.png" heihgt="100%">
 </p>
 
-<p align="center">
 [![Textoon](https://img.youtube.com/vi/cA0yNZwyGTo/0.jpg)](https://www.youtube.com/watch?v=cA0yNZwyGTo)
-</p>
 
 [If the video cannot be displayed, please visit YouTube directly to watch it](https://youtu.be/cA0yNZwyGTo)
 
