@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  [![Textoon](https://res.cloudinary.com/marcomontalbano/image/upload/v1745734405/video_to_markdown/images/youtube--cA0yNZwyGTo-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=cA0yNZwyGTo "Textoon")
+  [![Textoon Video](https://img.youtube.com/vi/cA0yNZwyGTo/0.jpg)](https://www.youtube.com/watch?v=cA0yNZwyGTo)
 </p>
 
 [If the video cannot be displayed, please visit YouTube directly to watch it](https://youtu.be/cA0yNZwyGTo)
