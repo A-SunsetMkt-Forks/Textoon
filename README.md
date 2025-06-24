@@ -70,9 +70,7 @@ pip install -r requirements.txt
 python main.py --text_prompt "她将长发扎成两条俏皮的双马尾，中发修剪得干净利落，长刘海微微遮住额头，露出一双灵动的蓝色眼睛。她穿着一件圆领的浅紫色短袖上衣，袖口处有荷叶边设计，下身搭配一条高腰的白色短裤，脚上穿着一双白色运动鞋"
 ```
 5. The generated Live2D model will be saved in the output folder, and you can preview it in the [Live2D viewer](https://www.live2d.com/en/cubism/download/editor/);
-<p align="center">
-  <img src="./assets/images/live2d_viewer.png" style="width: 50%; height: auto;">
-</p>
+ 
 
 6. We also provide a gradio page for easy use. If the textoon service and ComfyUI service are on the same machine, you can enter the ComnfyUI checkpoints path to retrieve and change different base models;
 ```
