@@ -62,6 +62,7 @@ pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --index-url https
 
 pip install -r requirements.txt
 ```
+**Download the haimeng data according to "assets/EULA.pdf" and place it in "assets/haimeng/"**
 
 2. Configure the translation service. If you can access Google, set ‘translation_services’ to ‘google’. Otherwise, it is recommended to use [Alibaba Cloud Translation Service](https://www.aliyun.com/product/ai/base_alimt). Activate the service to obtain AK&SK and fill in the environment variables Translate_AK&Translate_SK;
 3. Download [TextoonPromptParsing](https://modelscope.cn/models/hechaohc/TextoonPromptParsing)(Based on Qwen2.5-1.5B-Instruct) and place it in the model folder "checkpoints";
@@ -117,3 +118,6 @@ Many thanks to the following for their great work:
   year={2025}
 }
 ```
+
+## License
+Users must comply with [the Free Material License Agreement](https://www.live2d.jp/en/terms/free-material-license-agreement/) of Live2D inc.
